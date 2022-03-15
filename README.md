@@ -1,11 +1,11 @@
-# {isi nama game}
-## {isi nama kelompok}
+# {Steve Life}
+## {Be DominanT}
 
 ### Anggota
-- Asep
-- Agus
-- Bambang
-- Yusuf
+- Areta Escalonia. C
+- Jefer Setiawn
+- Nataniel Tambayung
+- Steve Christian. Y. P
 
 ### Aturan
 Lorem ipsum
