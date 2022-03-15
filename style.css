@@ -1,6 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-body {
-  margin:0;
-   font-family: 'Roboto', sans-serif; 
+
+.jam{
+    overflow: hidden;
+    width: 330px;
+    margin: 20px auto;
+    border: 5px solid #efefef;
 }
+
+.kotak{
+    float: left;
+    width: 110px;
+    height: 100px;
+    background-color: #189fff;
+}
+
+.jam p{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+}
+
