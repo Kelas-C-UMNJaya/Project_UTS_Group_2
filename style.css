@@ -23,13 +23,6 @@ body {
     border: 5px solid #efefef;
 }
 
-.kotak{
-    float: left;
-    width: 110px;
-    height: 100px;
-    background-color: #189fff;
-}
-
 .jam p{
     color: #fff;
     font-size: 36px;
