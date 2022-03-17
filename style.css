@@ -6,8 +6,15 @@
 }
 
 body {
-    color: white;
-    background-color: rgb(41, 33, 33);
+    color: rgb(239, 246, 224);
+    background-color: rgb(1, 22, 30);
+}
+
+#status-col{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background: rgb(18, 69, 89);
 }
 
 #logo svg{
