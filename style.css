@@ -6,7 +6,7 @@
 }
 
 body {
-    color: rgb(255, 253, 253);
+    color: rgb(233, 216, 166);
     background-color: rgb(1, 22, 30);
 }
 
@@ -18,35 +18,17 @@ body {
 }
 
 #bar-makan{
-    color: black;
     background-color: rgb(238, 155, 0);
     
 }
 #bar-belajar{
-    color: black;
     background-color: rgb(238, 155, 0);
 }
 #bar-main{
-    color: black;
     background-color: rgb(238, 155, 0);
 }
 #bar-tidur{
-    color: black;
     background-color: rgb(238, 155, 0);
-}
-
-.jam{
-    overflow: hidden;
-    width: 330px;
-    margin: 20px auto;
-    border: 5px solid #efefef;
-}
-
-.jam p{
-    color: #fff;
-    font-size: 36px;
-    text-align: center;
-    margin-top: 30px;
 }
 
 /*untuk tampilan depan */
@@ -55,4 +37,14 @@ body {
     margin-top: 10px;
     border-radius: 10px;
     text-align: center;
+}
+
+#Avatar{
+    background-color: rgb(233, 216, 166);
+    width: 300px;
+}
+
+#button-play{
+    color: rgb(233, 216, 166);
+    background-color: rgb(155, 34, 38);
 }

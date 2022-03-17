@@ -11,43 +11,41 @@
     <script src="https://kit.fontawesome.com/94763d94bd.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
-<body
-    class="bg-dark text-light">
-        <div id="logo" class="my-3 d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-trophy d-flex align-items-center justify-content-center"></i>
-        </div>
-        <h7 class="my-3 d-flex align-items-center justify-content-center">Mid Exam</h7>
-    <hr>
-    <div class="container">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div id="avatar1" class="carousel-item active">
-              <img src="foto/avatar1-removebg-preview (1).png" class="d-block w-100" alt="...">
-            </div>
-            <div id="avatar2" class="carousel-item">
-              <img src="foto/avatar2-removebg-preview (1).png" class="d-block w-100" alt="...">
-            </div>
-            <div id="avatar3" class="carousel-item">
-              <img src="foto/avatar3__1_-removebg-preview.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+<body>
+  <div class="container">
+    <div id="logo" class="my-3 d-flex align-items-center justify-content-center">
+        <i class="fa-solid fa-trophy d-flex align-items-center justify-content-center"></i>
     </div>
-    <hr>
+    <h7 class="my-3 d-flex align-items-center justify-content-center">Mid Exam</h7>
+  </div>
+  <div class="container d-flex align-items-center justify-content-center">
+    <div id="Avatar" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div id="avatar1" class="carousel-item active">
+          <img src="foto/avatar1-removebg-preview (1).png" class="d-block w-100" alt="...">
+        </div>
+        <div id="avatar2" class="carousel-item">
+          <img src="foto/avatar2-removebg-preview (1).png" class="d-block w-100" alt="...">
+        </div>
+        <div id="avatar3" class="carousel-item">
+          <img src="foto/avatar3__1_-removebg-preview.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Avatar" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Avatar" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
     <div id ="Nama">
       <p style="color: #f8f8f8"><br></p>
       <form action="#">
@@ -58,7 +56,9 @@
           <br>
         </form>
         <a href="Steve_Life.html">
-          <button>Play</button>
+          <button id="button-play" class="btn" type="button">
+              Play
+          </button>
         </a>
       <p style="color: #92a8d1"><br></p>
   </div>
