@@ -36,3 +36,10 @@ body {
 }
 
 
+/*untuk tampilan depan */
+#subscribe
+{
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
