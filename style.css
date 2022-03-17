@@ -6,21 +6,35 @@
 }
 
 body {
-    color: rgb(239, 246, 224);
+    color: rgb(255, 253, 253);
     background-color: rgb(1, 22, 30);
 }
 
 #status-col{
-    width: 500px;
-    height: 250px;
+    width: 600px;
+    height: 200px;
     border-radius: 20px;
-    background: rgb(18, 69, 89);
+    background: rgb(0, 95, 115);
 }
 
-#logo svg{
-    width: 200 px;
-    justify-content: center;
-    align-items: center;
+#bar-makan{
+    color: black;
+    background-color: rgb(238, 155, 0);
+}
+
+#bar-belajar{
+    color: black;
+    background-color: rgb(238, 155, 0);
+}
+
+#bar-main{
+    color: black;
+    background-color: rgb(238, 155, 0);
+}
+
+#bar-tidur{
+    color: black;
+    background-color: rgb(238, 155, 0);
 }
 
 .jam{
