@@ -11,49 +11,50 @@
     <script src="https://kit.fontawesome.com/94763d94bd.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
-<body>
+<body background="foto/bgg.gif">
   <div class="container">
-    <div id="logo" class="my-3 d-flex align-items-center justify-content-center">
+      <div id="logo" class="my-3 mt-5 d-flex align-items-center justify-content-center">
         <i class="fa-solid fa-trophy d-flex align-items-center justify-content-center"></i>
-    </div>
-    <h7 class="my-3 d-flex align-items-center justify-content-center">Mid Exam</h7>
-  </div>
-  <div class="container d-flex align-items-center justify-content-center">
-    <div id="Avatar" class="carousel slide" data-bs-ride="carousel">
-        <div id="avatar-slide" class="carousel slide" data-ride="carousel" data-bs-interval="500"></div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#Avatar" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
-        <div id="avatar1" class="carousel-item active">
-          <img src="foto/a1.png" class="d-block w-100" alt="...">
+      <h7 class="my-3 d-flex align-items-center justify-content-center">Mid Exam</h7>
+      <div class="container d-flex align-items-center justify-content-center">
+        <div id="Avatar" class="carousel slide" data-bs-ride="carousel">
+          <div id="avatar-slide" class="carousel slide" data-ride="carousel" data-bs-interval="500"></div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#Avatar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#Avatar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#Avatar" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div id="avatar2" class="carousel-item ac">
-          <img src="foto/a2.png" class="d-block w-100" alt="...">
+        <div class="carousel-inner">
+          <div id="avatar1" class="carousel-item active">
+            <img src="foto/a1.png" class="d-block w-100" alt="...">
+          </div>
+          <div id="avatar2" class="carousel-item ac">
+            <img src="foto/a2.png" class="d-block w-100" alt="...">
+          </div>
+          <div id="avatar3" class="carousel-item">
+            <img src="foto/a3.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <div id="avatar3" class="carousel-item">
-          <img src="foto/a3.png" class="d-block w-100" alt="...">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#Avatar" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Avatar" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#Avatar" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#Avatar" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      </div>
+      <div id ="Nama" class="container">
+        <form action="Steve_Life.html" class="d-flex justify-content-center align-item-center">
+          <div class="col-sm-6 d-grid justify-content-center">
+            <input type="text" id="nama" placeholder="Enter Your Name..." class="border"/>
+            <input id="button-play" type="submit" value="Play" onclick="nameValue();" class="mx-auto"/>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-    <div id ="Nama" class="container">
-      <form action="Steve_Life.html" class="d-flex justify-content-center align-item-center">
-        <div class="col-sm-6 d-grid justify-content-center">
-          <input type="text" id="nama" placeholder="Enter Your Name..." class="border"/>
-          <input id="button-play" type="submit" value="Play" onclick="nameValue();" class="mx-auto"/>
-        </div>
-      </form>
-    </div>
 </body>
 </html>

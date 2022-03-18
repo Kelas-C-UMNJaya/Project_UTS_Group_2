@@ -104,11 +104,12 @@ buttontidur.addEventListener("click", function() {
     klikTidur = !klikTidur;
     });
       
-      function nameValue() {
-  var name=document.getElementById("nama").value;
-  localStorage.setItem("textvalue",name);
-  return false; 
-}
+    function nameValue() {
+        localStorage.setItem("Avatar", document.querySelector(".carousel-item.active").querySelector("img").getAttribute("src"));
+        var name=document.getElementById("nama").value;
+        localStorage.setItem("textvalue",name);
+        return false; 
+    }
   document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
 
 
@@ -131,7 +132,7 @@ function gameTime() {
     document.getElementById("waktu").innerHTML = jam + ":" + detik;
   
     if (jam >= 6 && jam <= 11) {
-        salam = "Good Morning";            
+        salam = "Good Morning";      
     }else if (jam >= 12 && jam <= 15) {
         salam = "Good Afternoon"; 
     }else if (jam >= 16 && jam <= 18) {
@@ -194,7 +195,7 @@ function gameTime() {
 
       valueTidur = valueTidur - decreaseTidur;
       widthTidur.style.width = valueTidur+"%";
-      console.log(valueMakan);
+
       if (valueMakan > 99) {
           valueMain = valueMain + 2;
           widthMain.style.width = valueMain + "%";
@@ -312,18 +313,17 @@ function gameTime() {
       }
     }
 
-    
-    if(valueMakan == 4){
-        alert("WAHH MATI KELAPARAN NIH!");
-        window.location.href='Steve_Life.html'
-    }else if(valueTidur == 4){
-        alert("IMUN TUBUH TURUN KARENA BEGADANG!");
-        window.location.href='Steve_Life.html'
-    }else if(valueMain == 4){
-        alert("DEPRESI GADA HIBURAN!");
-        window.location.href='Steve_Life.html'
+    if(valueMakan < 4){
+        alert("ANDA MATI KELAPARAN!");
+        window.location.href='Steve_Life.html';
+    }else if(valueTakan < 4){
+        alert("ANDA MATI KELELAHAN!");
+        window.location.href='Steve_Life.html';
+    }else if(valueMain < 4){
+        alert("ANDA MATI KARENA DEPRESI!");
+        window.location.href='Steve_Life.html';
     }
-
+    
     if (jam >= 18 && valueBelajar == 0){
         
     } 
