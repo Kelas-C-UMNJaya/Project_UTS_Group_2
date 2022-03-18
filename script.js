@@ -1,5 +1,5 @@
 let waktu = new Date();
-let jam = 11;
+let jam = 10;
 let jamTemp = 0;
 let buttonType = "";
 var round = Math.round;
@@ -39,10 +39,10 @@ var klikTidur = true
 var avatar = localStorage.getItem("avatar");
 var avatarTemp = avatar;
 var avatarPlace = document.getElementById("avatar");
-var avatarMakan = avatarTemp+"-Makan";
-var avatarMain = avatarTemp+"-Main";
-var avatarTidur = avatarTemp+"-Tidur";
-var avatarBelajar = avatarTemp+"-Belajar";
+var avatarMakan = avatarTemp+"-Makan" + ".png"; 
+var avatarMain = avatarTemp+"-Game" + ".png";
+var avatarTidur = avatarTemp+"-Tidur" + ".png";
+var avatarBelajar = avatarTemp+"-Belajar" + ".png";
 var body = document.querySelector("body");
 
 function ambilNama(){
@@ -161,13 +161,13 @@ function gameTime() {
               body.style.backgroundImage = "url('./foto/bgsiang.png')";
     }else if (jam >= 16 && jam <= 18) {
         salam = "Good Evening";
-              body.style.backgroundImage = "url('./foto/')";
+              body.style.backgroundImage = "url('./foto/bgmalam.png')";
     }else if (jam >= 19 && jam <= 24) {
         salam = "Good Night";
-              body.style.backgroundImage = "url('./foto/bgmalam.png')";
+              body.style.backgroundImage = "url('./foto/bggelap.png')";
     }else if (jam >= 1 && jam <= 5) {
         salam = "Good Night";
-              body.style.backgroundImage = "url('./foto/bgmalam.png')";
+              body.style.backgroundImage = "url('./foto/bggelap.png')";
     }
     document.getElementById("mengucapSalam").innerHTML = salam;
    
@@ -179,6 +179,11 @@ function gameTime() {
         valueBelajar = 0;
         widthBelajar.style.width=valueBelajar;
     }
+    if(semester == 8){
+        alert("SELAMAT ANDA LULUS!");
+        window.location.href='avatar.html';
+    }
+
     if (buttonType == "") {
       decreaseMakan = 1.5;
       decreaseTidur = 0.2;
@@ -344,17 +349,19 @@ function gameTime() {
 
     if(valueMakan < 4){
         alert("ANDA MATI KELAPARAN!");
-        window.location.href='Steve_Life.html';
+        window.location.href='avatar.html';
     }else if(valueTidur < 4){
         alert("ANDA MATI KELELAHAN!");
-        window.location.href='Steve_Life.html';
+        window.location.href='avatar.html';
     }else if(valueMain < 4){
         alert("ANDA MATI KARENA DEPRESI!");
-        window.location.href='Steve_Life.html';
+        window.location.href='avatar.html';
     }
     
-    if(jam == 18 && valueBelajar == 0){
+    if(jam == 18 && valueBelajar == 30){
         alert("KAMU KENA DO!");
+        window.location.href='avatar.html';
     }
 }
 
+console.log(avatar);
