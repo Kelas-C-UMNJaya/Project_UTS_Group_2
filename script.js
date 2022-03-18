@@ -363,5 +363,3 @@ function gameTime() {
         window.location.href='avatar.html';
     }
 }
-
-console.log(avatar);
