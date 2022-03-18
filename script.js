@@ -5,6 +5,7 @@ let buttonType = "";
 var round = Math.round;
 
 let semester = 1;
+document.getElementById("semestersekarang").innerHTML= semester;
 
 var increaseMakan = 0;
 var decreaseMakan = 0.6;
@@ -38,15 +39,15 @@ var klikTidur = true
 
 
 buttonmakan.addEventListener("click", function() {
-  klikTidur = true;
-  klikMain = true;
-  klikBelajar = true;
-  if(klikMakan) {
-      buttonmakan.style.backgroundColor = "#EE9F16";
-      buttonbelajar.style.backgroundColor = "#E9D8A6";
-      buttontidur.style.backgroundColor = "#E9D8A6";
-      buttonmain.style.backgroundColor = "#E9D8A6";
-      buttonType= "bar-makan";
+    klikTidur = true;
+    klikMain = true;
+    klikBelajar = true;
+    if(klikMakan) {
+        buttonmakan.style.backgroundColor = "#EE9F16";
+        buttonbelajar.style.backgroundColor = "#E9D8A6";
+        buttontidur.style.backgroundColor = "#E9D8A6";
+        buttonmain.style.backgroundColor = "#E9D8A6";
+        buttonType= "bar-makan";
     }else{
       buttonmakan.style.backgroundColor = "#E9D8A6";
       buttonType= "";
@@ -55,20 +56,20 @@ buttonmakan.addEventListener("click", function() {
   });
   
   buttonbelajar.addEventListener("click", function() {
-        klikTidur = true;
-        klikMain = true;
-        klikMakan = true;
-        if(klikBelajar) {
-            buttonmakan.style.backgroundColor = "#E9D8A6";
-            buttonbelajar.style.backgroundColor = "#EE9F16";
-            buttontidur.style.backgroundColor = "#E9D8A6";
-            buttonmain.style.backgroundColor = "#E9D8A6";
-            buttonType= "bar-belajar";
-        }else{
-            buttonbelajar.style.backgroundColor = "#E9D8A6";
-            buttonType= "";
-        }
-        klikBelajar = !klikBelajar;
+    klikTidur = true;
+    klikMain = true;
+    klikMakan = true;
+    if(klikBelajar) {
+        buttonmakan.style.backgroundColor = "#E9D8A6";
+        buttonbelajar.style.backgroundColor = "#EE9F16";
+        buttontidur.style.backgroundColor = "#E9D8A6";
+        buttonmain.style.backgroundColor = "#E9D8A6";
+        buttonType= "bar-belajar";
+    }else{
+        buttonbelajar.style.backgroundColor = "#E9D8A6";
+        buttonType= "";
+    }
+    klikBelajar = !klikBelajar;
   });
   
   buttonmain.addEventListener("click", function() {
@@ -76,34 +77,34 @@ buttonmakan.addEventListener("click", function() {
     klikBelajar = true;
     klikMakan = true;
     if(klikMain) {
-          buttonmakan.style.backgroundColor = "#E9D8A6";
-          buttonbelajar.style.backgroundColor = "#E9D8A6";
-          buttontidur.style.backgroundColor = "#E9D8A6";
-          buttonmain.style.backgroundColor = "#EE9F16";
-          buttonType= "bar-main";
-        }else{
-          buttonmain.style.backgroundColor = "#E9D8A6";
-          buttonType= "";
-        }
-        klikMain = !klikMain;
-      });
+        buttonmakan.style.backgroundColor = "#E9D8A6";
+        buttonbelajar.style.backgroundColor = "#E9D8A6";
+        buttontidur.style.backgroundColor = "#E9D8A6";
+        buttonmain.style.backgroundColor = "#EE9F16";
+        buttonType= "bar-main";
+    }else{
+        buttonmain.style.backgroundColor = "#E9D8A6";
+        buttonType= "";
+    }
+    klikMain = !klikMain;
+    });
 
-      buttontidur.addEventListener("click", function() {
+    buttontidur.addEventListener("click", function() {
         klikMakan = true;
         klikMain = true;
         klikBelajar = true;
         if(klikTidur) {
-          buttonmakan.style.backgroundColor = "#E9D8A6";
-          buttonbelajar.style.backgroundColor = "#E9D8A6";
-          buttontidur.style.backgroundColor = "#EE9F16";
-          buttonmain.style.backgroundColor = "#E9D8A6";
-          buttonType= "bar-tidur";
+            buttonmakan.style.backgroundColor = "#E9D8A6";
+            buttonbelajar.style.backgroundColor = "#E9D8A6";
+            buttontidur.style.backgroundColor = "#EE9F16";
+            buttonmain.style.backgroundColor = "#E9D8A6";
+            buttonType= "bar-tidur";
         }else{
-          buttontidur.style.backgroundColor = "#E9D8A6";
-          buttonType= "";
+            buttontidur.style.backgroundColor = "#E9D8A6";
+            buttonType= "";
         }
         klikTidur = !klikTidur;
-      });
+        });
       
       function nameValue() {
   var name=document.getElementById("nama").value;
@@ -118,7 +119,7 @@ function gameTime() {
     let salam = "";
     let waktu = new Date();
     let detik = waktu.getSeconds();
-
+  
     if (detik < 10) {
         detik = "0" + detik;
     }
@@ -130,7 +131,7 @@ function gameTime() {
         jam = 0;
     }
     document.getElementById("waktu").innerHTML = jam + ":" + detik;
-
+  
     if (jam >= 6 && jam <= 11) {
         salam = "Good Morning";            
     }else if (jam >= 12 && jam <= 15) {
@@ -143,14 +144,21 @@ function gameTime() {
         salam = "Good Night";
     }
     document.getElementById("mengucapSalam").innerHTML = salam;
-   
+     
+    if(valueBelajar >= 100){
+        semester = semester + 1;
+        document.getElementById("semestersekarang").innerHTML = semester;
+        valueBelajar = 0;
+        widthBelajar.style.width=valueBelajar;
+    }
+  
     if (buttonType == "") {
-      decreaseMakan = 0.8;
+      decreaseMakan = 1.5;
       decreaseTidur = 0.2;
       decreaseMain = 0.4;
 
       if (valueMakan >= 20 ) {
-          decreaseMain = 0.4;
+          decreaseMain = 0.2;
       }
       else if (valueMakan < 20) {
           decreaseMain = 0.6;
@@ -305,4 +313,19 @@ function gameTime() {
           buttonType = "";
       }
     }
+
+    if(valueMakan == 4){
+        alert("WAHH MATI KELAPARAN NIH!");
+        window.location.href='Steve_Life.html'
+    }else if(valueTidur == 4){
+        alert("IMUN TUBUH TURUN KARENA BEGADANG!");
+        window.location.href='Steve_Life.html'
+    }else if(valueMain == 4){
+        alert("DEPRESI GADA HIBURAN!");
+        window.location.href='Steve_Life.html'
+    }
+
+    if (jam >= 18 && valueBelajar == 0){
+        
+    } 
 }
