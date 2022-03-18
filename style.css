@@ -12,14 +12,13 @@ body {
 }
 
 #status-col{
-    width: 600px;
-    height: 200px;
+    width: 400px;
+    height: 190px;
     border-radius: 20px;
     background: rgb(0, 95, 115);
 }
 
 #bar-makan{
-    width: 0%;
     background-color: rgb(238, 155, 0);
 }
 
@@ -34,18 +33,22 @@ body {
 }
 
 #button-makan{
+    border-radius: 20px;
     text-align: center;
     background-color: rgb(233, 216, 166);
 }
 #button-belajar{
+    border-radius: 20px;
     text-align: center;
     background-color: rgb(233, 216, 166);
 }
 #button-main{
+    border-radius: 20px;
     text-align: center;
     background-color: rgb(233, 216, 166);
 }
 #button-tidur{
+    border-radius: 20px;
     text-align: center;
     background-color: rgb(233, 216, 166);
 }
@@ -62,7 +65,6 @@ body {
 }
 
 #Avatar{
-    background-color: rgba(233, 216, 166, 0.082);
     width: 300px;
 }
 
