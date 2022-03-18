@@ -2,10 +2,10 @@
 ## {Be DominanT}
 
 ### Anggota
-- Areta Escalonia. C
-- Jefer Setiawan
-- Nataniel Tambayung
-- Steve Christian. Y. P
+- Areta Escalonia. C/[aescalonia](https://github.com/aescalonia) (00000057872)
+- Jefer Setiawan/[Ajeppp](https://github.com/Ajeppp) (00000059297)
+- Nataniel Tambayung/[natanieltam](https://github.com/natanieltam) (00000057617)
+- Steve Christian. Y. P/[stevgamz](https://github.com/stevgamz) (00000058797)
 
 ### Cara bermain dan aturan
 
