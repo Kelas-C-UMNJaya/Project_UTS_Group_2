@@ -47,19 +47,13 @@
       </button>
     </div>
   </div>
-    <div id ="Nama">
-      <p style="color: #f8f8f8"><br></p>
-      <form action="#">
-          <input type="text" id="nama" name="nama" placeholder="Enter Your Name...">
-          <br>
-          <br>
-        </form>
-        <a href="Steve_Life.html">
-          <button id="button-play" class="btn" type="button">
-              Play
-          </button>
-        </a>
-      <p style="color: #92a8d1"><br></p>
-  </div>
+    <div id ="Nama" class="container">
+      <form action="Steve_Life.html" class="d-flex justify-content-center align-item-center">
+        <div class="col-sm-6 d-grid justify-content-center">
+          <input type="text" id="nama" placeholder="Enter Your Name..." class="border"/>
+          <input id="button-play" type="submit" value="Play" onclick="nameValue();" class="mx-auto"/>
+        </div>
+      </form>
+    </div>
 </body>
 </html>

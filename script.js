@@ -2,6 +2,65 @@ let waktu = new Date();
 let jam = 6;
 let jamTemp = 0;
 
+var i = 0;
+function makan() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("bar-makan");
+    var width = 50;
+    var id = setInterval(frame, 1000);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
+function belajar() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("bar-belajar");
+      var width = 10;
+      var id = setInterval(frame, 1000);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+}
+function main() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("bar-main");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+}
+function nameValue() {
+    var name=document.getElementById("nama").value;
+    localStorage.setItem("textvalue",name);
+    return false; 
+}
+document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+
 const Time = setInterval(gameTime,1000);
 function gameTime(){
     let salam = "";
