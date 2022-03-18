@@ -36,17 +36,33 @@ var buttontidur = document.querySelector("#button-tidur");
 var klikTidur = true
 
 
+var avatar = localStorage.getItem("avatar");
+var avatarTemp = avatar;
+var avatarPlace = document.getElementById("avatar");
+var avatarMakan = avatarTemp+"-Makan";
+var avatarMain = avatarTemp+"-Main";
+var avatarTidur = avatarTemp+"-Tidur";
+var avatarBelajar = avatarTemp+"-Belajar";
+var body = document.querySelector("body");
+
+function ambilNama(){
+    localStorage.setItem("avatar", document.querySelector(".carousel-item.active").querySelector("img").getAttribute("src"));
+    localStorage.setItem("nama", document.getElementById("nama").value);
+}
+
 buttonmakan.addEventListener("click", function() {
     klikTidur = true;
     klikMain = true;
     klikBelajar = true;
     if(klikMakan) {
+        avatarTemp = avatarMakan;
         buttonmakan.style.backgroundColor = "#EE9F16";
         buttonbelajar.style.backgroundColor = "#E9D8A6";
         buttontidur.style.backgroundColor = "#E9D8A6";
         buttonmain.style.backgroundColor = "#E9D8A6";
         buttonType= "bar-makan";
     }else{
+        avatarTemp = avatar;
         buttonmakan.style.backgroundColor = "#E9D8A6";
         buttonType= "";
     }
@@ -58,12 +74,14 @@ buttonbelajar.addEventListener("click", function() {
     klikMain = true;
     klikMakan = true;
     if(klikBelajar) {
+        avatarTemp = avatarBelajar;
         buttonmakan.style.backgroundColor = "#E9D8A6";
         buttonbelajar.style.backgroundColor = "#EE9F16";
         buttontidur.style.backgroundColor = "#E9D8A6";
         buttonmain.style.backgroundColor = "#E9D8A6";
         buttonType= "bar-belajar";
     }else{
+        avatarTemp = avatar;
         buttonbelajar.style.backgroundColor = "#E9D8A6";
         buttonType= "";
     }
@@ -75,12 +93,14 @@ buttonmain.addEventListener("click", function() {
     klikBelajar = true;
     klikMakan = true;
     if(klikMain) {
+        avatarTemp = avatarMain;
         buttonmakan.style.backgroundColor = "#E9D8A6";
         buttonbelajar.style.backgroundColor = "#E9D8A6";
         buttontidur.style.backgroundColor = "#E9D8A6";
         buttonmain.style.backgroundColor = "#EE9F16";
         buttonType= "bar-main";
     }else{
+        avatarTemp = avatar;
         buttonmain.style.backgroundColor = "#E9D8A6";
         buttonType= "";
     }
@@ -92,6 +112,7 @@ buttontidur.addEventListener("click", function() {
     klikMain = true;
     klikBelajar = true;
     if(klikTidur) {
+        avatarTemp = avatarTidur;
         buttonmakan.style.backgroundColor = "#E9D8A6";
         buttonbelajar.style.backgroundColor = "#E9D8A6";
         buttontidur.style.backgroundColor = "#EE9F16";
@@ -99,18 +120,19 @@ buttontidur.addEventListener("click", function() {
         buttonType= "bar-tidur";
     }else{
         buttontidur.style.backgroundColor = "#E9D8A6";
+        avatarTemp = avatar;
         buttonType= "";
     }
     klikTidur = !klikTidur;
     });
       
     function nameValue() {
-        localStorage.setItem("Avatar", document.querySelector(".carousel-item.active").querySelector("img").getAttribute("src"));
+        localStorage.setItem("avatar", document.querySelector(".carousel-item.active").querySelector("img").getAttribute("src"));
         var name=document.getElementById("nama").value;
         localStorage.setItem("textvalue",name);
         return false; 
     }
-  document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
 
 
 const Time = setInterval(gameTime,1000);
@@ -132,18 +154,25 @@ function gameTime() {
     document.getElementById("waktu").innerHTML = jam + ":" + detik;
   
     if (jam >= 6 && jam <= 11) {
-        salam = "Good Morning";      
+        salam = "Good Morning";
+              body.style.backgroundImage = "url('./foto/bgpagi.png')";
     }else if (jam >= 12 && jam <= 15) {
         salam = "Good Afternoon"; 
+              body.style.backgroundImage = "url('./foto/bgsiang.png')";
     }else if (jam >= 16 && jam <= 18) {
         salam = "Good Evening";
+              body.style.backgroundImage = "url('./foto/')";
     }else if (jam >= 19 && jam <= 24) {
         salam = "Good Night";
+              body.style.backgroundImage = "url('./foto/bgmalam.png')";
     }else if (jam >= 1 && jam <= 5) {
         salam = "Good Night";
+              body.style.backgroundImage = "url('./foto/bgmalam.png')";
     }
     document.getElementById("mengucapSalam").innerHTML = salam;
    
+    avatarPlace.src = avatarTemp;
+    
     if(valueBelajar >= 100){
         semester = semester + 1;
         document.getElementById("semestersekarang").innerHTML = semester;
@@ -316,7 +345,7 @@ function gameTime() {
     if(valueMakan < 4){
         alert("ANDA MATI KELAPARAN!");
         window.location.href='Steve_Life.html';
-    }else if(valueTakan < 4){
+    }else if(valueTidur < 4){
         alert("ANDA MATI KELELAHAN!");
         window.location.href='Steve_Life.html';
     }else if(valueMain < 4){
@@ -324,8 +353,8 @@ function gameTime() {
         window.location.href='Steve_Life.html';
     }
     
-    if (jam >= 18 && valueBelajar == 0){
-        
-    } 
+    if(jam == 18 && valueBelajar == 0){
+        alert("KAMU KENA DO!");
+    }
 }
 

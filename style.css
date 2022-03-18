@@ -64,8 +64,43 @@ body {
     background-color: rgb(233, 216, 166);
 }
 
-#Avatar{
-    width: 300px;
+#avatar{
+    width: 30%;
+}
+
+#avatars {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 200px;
+	height: 300px;
+	overflow-y: auto;
+}
+
+.avatars > input + img {
+	border: 2px solid transparent;
+}
+
+.avatars > input:checked + img {
+	border: 2px solid red;
+}
+
+#avatarSelector img {
+	object-fit: cover;
+}
+
+#avatarSelector {
+	overflow: hidden;
+}
+
+.carousel-item img {
+	object-fit: cover;
+}
+
+.carousel-item {
+	-webkit-transition: none;
+	transition: none;
 }
 
 #button-play{
