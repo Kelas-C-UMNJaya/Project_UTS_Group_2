@@ -4,6 +4,7 @@ let jamTemp = 0;
 let buttonType = "";
 var round = Math.round;
 
+let semester = 1;
 
 var increaseMakan = 0;
 var decreaseMakan = 0.6;

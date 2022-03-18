@@ -8,6 +8,7 @@
 body {
     color: rgb(233, 216, 166);
     background-color: rgb(1, 22, 30);
+    background-size: cover;
 }
 
 #status-col{
