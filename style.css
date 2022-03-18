@@ -32,6 +32,23 @@ body {
     background-color: rgb(238, 155, 0);
 }
 
+#button-makan{
+    text-align: center;
+    background-color: rgb(233, 216, 166);
+}
+#button-belajar{
+    text-align: center;
+    background-color: rgb(233, 216, 166);
+}
+#button-main{
+    text-align: center;
+    background-color: rgb(233, 216, 166);
+}
+#button-tidur{
+    text-align: center;
+    background-color: rgb(233, 216, 166);
+}
+
 /*Tampilan Pilih Avatar*/
 #nama
 {
