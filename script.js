@@ -1,5 +1,5 @@
 let waktu = new Date();
-let jam = 10;
+let jam = 17;
 let jamTemp = 0;
 let buttonType = "";
 var round = Math.round;
