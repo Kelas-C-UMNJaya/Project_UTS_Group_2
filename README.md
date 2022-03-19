@@ -14,7 +14,7 @@ Ini adalah Sebuah Game yang dibuat berdasarkan kehidupan Steve selama kuliah di 
 Steve adalah seorang yang suka bermain game (Valorant, Minecraft, Roblox, Free Fire, Cooking mama) 
 dan juga seorang mahasiswa Teknik Informatika. Sebelum bermain berikut adalah cara bermain dan beberapa
 peraturan yang harus dibaca terlebih dahulu. 
-
+Peraturan: 
 - Pilih Avatar yang mau dipakai dan masukan nama anda.
 - Klik "Play" untuk memulai permainan.
 - Anda akan masuk ke menu game, di awal permainan semua progress bar akan terisi 50%, kecuali progress bar belajar yang dimulai dari 0%.
@@ -28,5 +28,8 @@ peraturan yang harus dibaca terlebih dahulu.
 - Jika salah satu progress bar kosong, maka anda akan kalah.
 - Ketika anda mencapai semester 8 anda akan lulus atau Menang.
 
+Fitur:
+- Background akan berganti sesuai dengan jam didalam game.
+- Avatar akan berganti sesuai dengan aktifitas yang sedang dilakukan.
 
 
