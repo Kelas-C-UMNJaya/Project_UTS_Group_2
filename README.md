@@ -15,10 +15,10 @@ Steve adalah seorang yang suka bermain game (Valorant, Minecraft, Roblox, Free F
 dan juga seorang mahasiswa Teknik Informatika. Sebelum bermain berikut adalah cara bermain dan beberapa
 peraturan yang harus dibaca terlebih dahulu. 
 
-- Pilih avatar yang mau dipakai dan masukan nama anda.
+- Pilih Avatar yang mau dipakai dan masukan nama anda.
 - Klik "Play" untuk memulai permainan.
 - Anda akan masuk ke menu game, di awal permainan semua progress bar akan terisi 50%, kecuali progress bar belajar yang dimulai dari 0%.
-- Permainan akan di mulai dari jam 11 siang.
+- Permainan akan di mulai dari jam 10 pagi.
 - Setiap anda klik "Eat" maka progress bar makan akan tambah.
 - Setiap anda klik "Study" maka progress bar belajar akan tambah. Makan, main dan tidur akan berkurang.
 - Setiap anda klik "Play" maka progress bar main akan bertambah. Makan dan tidur akan berkurang.  
