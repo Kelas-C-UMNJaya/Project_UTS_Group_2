@@ -24,7 +24,7 @@ peraturan yang harus dibaca terlebih dahulu.
 - Setiap anda klik "Play" maka progress bar main akan bertambah. Makan dan tidur akan berkurang.  
 - Setiap anda klik "Sleep" maka progress bar tidur akan tambah.
 - Jika anda idle progress bar akan berkurang, kecuali progress bar belajar.
-- Jika anda tidak belajar anda bisa di DO. Target Belajar 10%. akan dicek setiap jam 18.
+- Jika anda tidak belajar anda bisa di DO. Target Belajar 30%. akan dicek setiap jam 18.
 - Jika salah satu progress bar kosong, maka anda akan kalah.
 - Ketika anda mencapai semester 8 anda akan lulus atau Menang.
 
