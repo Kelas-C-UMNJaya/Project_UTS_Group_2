@@ -349,17 +349,17 @@ function gameTime() {
 
     if(valueMakan < 4){
         alert("ANDA MATI KELAPARAN!");
-        window.location.href='avatar.html';
+        window.location.href='index.html';
     }else if(valueTidur < 4){
         alert("ANDA MATI KELELAHAN!");
-        window.location.href='avatar.html';
+        window.location.href='index.html';
     }else if(valueMain < 4){
         alert("ANDA MATI KARENA DEPRESI!");
-        window.location.href='avatar.html';
+        window.location.href='index.html';
     }
     
     if(jam >= 18 && jam <= 19 && valueBelajar <= 30){
         alert("KAMU KENA DO!");
-        window.location.href='avatar.html';
+        window.location.href='index.html';
     }
 }
