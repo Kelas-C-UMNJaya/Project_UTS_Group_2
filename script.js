@@ -358,7 +358,7 @@ function gameTime() {
         window.location.href='avatar.html';
     }
     
-    if(jam >= 18 && valueBelajar <= 30){
+    if(jam >= 18 && jam <= 19 && valueBelajar <= 30){
         alert("KAMU KENA DO!");
         window.location.href='avatar.html';
     }
